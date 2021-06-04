@@ -2,4 +2,4 @@
 
 ## Table Of Contents 
 
-### Assignment 1 (Configuring our Environment) ----
+### Assignment 1 (Configuring our Environment) 
