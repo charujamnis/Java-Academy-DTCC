@@ -1,3 +1,3 @@
 # Java Academy
 
-## Table Of Contents 
+## Table Of Contents
