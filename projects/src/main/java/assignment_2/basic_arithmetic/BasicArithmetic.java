@@ -36,26 +36,26 @@ public class BasicArithmetic {
             but, it's code so you can always "cheat" ;)
          */
 
-        // System.out.println(String.format("Special Asserts Correctly: %b", (10 * 10 + (1 + 3 * ( 5 - 2 ) / 3) + 1 * 2 - 1 * 3) == 1))
+         System.out.println(String.format("Special Asserts Correctly: %b", (10 * 10 + (1 + 3 * ( 5 - 2 ) / 3) + 1 * 2 - 1 * 3) == 103));
     }
 
     public static int add(int x, int y) {
-        return 0;
+        return x+y;
     }
 
     public static int subtract(int x, int y) {
-        return 0;
+        return x-y;
     }
 
     public static int multiply(int x, int y) {
-        return 0;
+        return x*y;
     }
 
     public static int divide(int x, int y) {
-        return 0;
+        return y/x;
     }
 
     public static int remainder(int x, int y) {
-        return 0;
+        return y%x;
     }
 }

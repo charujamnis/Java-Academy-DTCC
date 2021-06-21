@@ -3,7 +3,8 @@ package assignment_2.conditionals;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.concurrent.ThreadLocalRandom;
+import java.util.Random;
+//import java.util.concurrent.ThreadLocalRandom;
 
 public class HighLowGame {
 
@@ -19,12 +20,18 @@ public class HighLowGame {
 
         int low = 0;
         int max = 10;
-        int answer =  ThreadLocalRandom.current().nextInt(low, max + 1);
+        int answer = (int)Math.floor(Math.random()*(max-low+1)+low);
+       // int answer =  ThreadLocalRandom.current().nextInt(low, max + 1);
+        System.out.println(String.format("Please input an integer %s!", name));
         while(true) {
-            System.out.println(String.format("Please input an integer %s!", name));
-            int guess = Integer.parseInt(reader.readLine());
 
-            if(guess == answer) {
+            int guess = Integer.parseInt(reader.readLine());
+            if(guess>answer){
+                System.out.println(String.format("Please enter number lower than %d , %s!", guess,name));
+            } else if(guess<answer){
+                System.out.println(String.format("Please enter number higher than %d , %s!",guess, name));
+            }
+            else if(guess == answer) {
                 System.out.println(String.format("The answer was %s, you win!", String.valueOf(guess)));
                 break;
             }
