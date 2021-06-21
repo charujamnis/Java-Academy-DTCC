@@ -12,7 +12,7 @@ public class PrimitiveDataTypes {
         double double_number=10.5;
 
         //Cast your int type into a new variable of type double
-        double d=i;
+        double d=(double)i;
         System.out.println("integer to double: "+d);
 
         //Multiply your float and original double type variable and store the result in a float
