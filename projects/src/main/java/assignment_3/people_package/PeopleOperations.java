@@ -13,13 +13,15 @@ public class PeopleOperations {
             Please ensure that you create an ArrayList of Person(s) with at least
             4 members
          */
+
+        int ageRange=99-1;
         ArrayList<Person> people = new ArrayList<Person>();
 
-        people.add( new Person("Lia",53));
-        people.add( new Person("Shakira",20));
-        people.add( new Person("Adley",35));
-        people.add( new Person("Lorie",19));
-        people.add( new Person("Ramona",42));
+        people.add( new Person("Lia",(int)(Math.random()*ageRange)+1));
+        people.add( new Person("Shakira",(int)(Math.random()*ageRange)+1));
+        people.add( new Person("Adley",(int)(Math.random()*ageRange)+1));
+        people.add( new Person("Lorie",(int)(Math.random()*ageRange)+1));
+        people.add( new Person("Ramona",(int)(Math.random()*ageRange)+1));
 
         System.out.println("\n******Original List*******");
         for(Person p : people) {
