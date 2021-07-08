@@ -42,6 +42,7 @@ public class DogPound {
         /*
             Modify Me
          */
+        public String speak;
         public int age;
         public String name;
 
@@ -59,8 +60,8 @@ public class DogPound {
 
                 <data type> <variable name> = <expression>
              */
-
-            throw new Exception("Please implement this function");
+            this.name=n;
+            //throw new Exception("Please implement this function");
         }
 
         public String speak() {
@@ -68,8 +69,9 @@ public class DogPound {
                 Please finish this method, you want to ensure that your dog speaks
                 when you ask them to.
              */
-
-            return null;
+            this.speak="Woof-woof";
+            return this.speak;
+           // return null;
         }
     }
 }
