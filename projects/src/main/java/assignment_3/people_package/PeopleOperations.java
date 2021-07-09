@@ -28,6 +28,8 @@ public class PeopleOperations {
 
         Person youngestPerson = getYoungestPerson(people);
         Person oldestPerson = getOldestPerson(people);
+        double average=getAverageAge(people);
+
         ArrayList<Person> sortedByAgeList = getSortedListByAge(people);
         ArrayList<Person> sortedByNameList = getSortedListByName(people, false);
 
