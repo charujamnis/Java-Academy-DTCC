@@ -13,18 +13,15 @@ public class Person implements Comparable<Person> {
     private int age;
     private int ID;
 
-    public Person(){}
-    public Person(String name, int age){
-        this.name=name;
-        this.age=age;
+    public Person(){
         int min=1;
-        int max=999;
+        int max=1000;
         int range=(max-min)-1;
         this.ID= (int)(Math.random()*range)+min;
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
@@ -32,7 +29,7 @@ public class Person implements Comparable<Person> {
     }
 
     public int getAge() {
-        return age;
+        return this.age;
     }
 
     public void setAge(int age) {
@@ -40,7 +37,7 @@ public class Person implements Comparable<Person> {
     }
 
     public int getID() {
-        return ID;
+        return this.ID;
     }
 
     public void setID(int ID) {

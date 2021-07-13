@@ -4,6 +4,7 @@ package assignment_3.people_package;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class PeopleOperations {
     public static void main (String args []) throws Exception {
@@ -11,15 +12,33 @@ public class PeopleOperations {
             Please ensure that you create an ArrayList of Person(s) with at least
             4 members
          */
+        ArrayList<String> names=new ArrayList<>();
+        names.add("Jennifer");
+        names.add("Rihanna");
+        names.add("Selena");
+        names.add("Taylor");
+        names.add("Ariana");
 
-        int ageRange=99-1;
         ArrayList<Person> people = new ArrayList<Person>();
+        int limit=1000;
+        int counter=0;
+        int ageRange=100-1;
 
-        people.add( new Person("Lia",(int)(Math.random()*ageRange)+1));
+        while(counter<limit){
+            int index= ThreadLocalRandom.current().nextInt(0,names.size());
+            String name=names.get(index)+Integer.valueOf(counter);
+            Person p=new Person();
+            p.setName(name);
+            p.setAge((int)(Math.random()*ageRange)+1);
+            people.add(p);
+            counter++;
+        }
+
+       /* people.add( new Person("Lia",(int)(Math.random()*ageRange)+1));
         people.add( new Person("Shakira",(int)(Math.random()*ageRange)+1));
         people.add( new Person("Adley",(int)(Math.random()*ageRange)+1));
         people.add( new Person("Lorie",(int)(Math.random()*ageRange)+1));
-        people.add( new Person("Ramona",(int)(Math.random()*ageRange)+1));
+        people.add( new Person("Ramona",(int)(Math.random()*ageRange)+1));*/
 
         System.out.println("\n******Original List*******");
         for(Person p : people) {
