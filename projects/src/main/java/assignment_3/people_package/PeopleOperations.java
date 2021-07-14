@@ -80,7 +80,10 @@ public class PeopleOperations {
                 pObject=list.get(i);
             }
         }
-        System.out.println("The minimum aged person is "+pObject.getName()+" whose age is "+pObject.getAge());
+        System.out.println("**********************************");
+        System.out.println("The  minimum aged person is: ");
+        System.out.println(pObject);
+        //System.out.println("The minimum aged person is "+pObject.getName()+" whose age is "+pObject.getAge());
         return pObject;
     }
 
@@ -94,7 +97,10 @@ public class PeopleOperations {
                 pObject=list.get(i);
             }
         }
-        System.out.println("The maximum aged person is "+pObject.getName()+" whose age is "+pObject.getAge());
+      //  System.out.println("The maximum aged person is "+pObject.getName()+" whose age is "+pObject.getAge());
+        System.out.println("**********************************");
+        System.out.println("The  maximum aged person is: ");
+        System.out.println(pObject);
         return pObject;
     }
 

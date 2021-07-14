@@ -47,7 +47,7 @@ public class Person implements Comparable<Person> {
 
     public String toString(){
 
-        return "Name : "+this.name+"\nPerson's Age: "+this.age+"\nID: "+this.ID+"\n-----------";
+        return "Name : "+this.name+"\nPerson's Age: "+this.age+"\nID: "+this.ID+"\n---------------------";
     }
 
     @Override
